@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+.banner-img {
+  border-radius: 0px 0px 30px 30px;
+}
+.hero-top-data {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hero-heading {
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+.hero-para {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 3.4rem;
+  /* max-width: 60rem; */
+}
+.section-hero-data {
+  font-family: "Quicksand", sans-serif;
+  /* margin-left: 5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

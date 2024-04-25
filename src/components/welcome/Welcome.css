@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;700;800;900&family=Work+Sans:wght@300;500;900&display=swap");
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+.main-welcome {
+  width: 98%;
+  padding: 50px;
+  /* background-color: #ebeff0; */
+  background-color: rgba(237, 237, 237, 0.9);
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-welcome > div > img {
+  border-radius: 2.5rem;
+}
+.welcome-data {
+  width: 900px;
+}
+.welcome-heading {
+  font-family: "Quicksand", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+}
+/* .welcome-heading ::after {
+  width: 75px;
+  height: 100px;
+  right: auto;
+  background-color: red;
+} */
+.welcome-para {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 3rem;
+}

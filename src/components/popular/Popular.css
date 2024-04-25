@@ -1,0 +1,60 @@
+.item-button {
+  position: absolute;
+  bottom: 1rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  margin: 0px 5px;
+}
+
+.item-btn-pop {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.8rem 2.5rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.496);
+}
+.item-btn-pop:hover {
+  background-color: black;
+  color: white;
+}
+.item-btn-pop-black {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.8rem 2.5rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.496);
+}
+.item-btn-pop-black:hover {
+  background-color: white;
+  color: black;
+}
+.pop-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.heart-icon {
+  color: red;
+}

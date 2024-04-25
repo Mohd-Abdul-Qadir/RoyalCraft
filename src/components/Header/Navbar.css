@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+li {
+  list-style: none;
+}
+/* NavLink {
+    text-decoration: none;
+  } */
+ul {
+  text-decoration: none;
+}
+.link {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: color 0.3s linear;
+}
+.link:hover {
+  color: var(--helper);
+}
+.main-navbar {
+  display: flex;
+  gap: 70px;
+}
+.navbar-link {
+  display: flex;
+  gap: 5rem;
+}
+.mobile-navbar-btn {
+  display: none;
+}
+.mobile-navbar-btn[name="close-outline"] {
+  display: none;
+}
+.close-outline {
+  display: none;
+  display: block;
+}
+
+.main-search {
+  margin-top: -5px;
+  position: relative;
+}
+.main-search input {
+  width: 350px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  border: 0.2rem solid black;
+  background-color: transparent;
+}
+.search-icon {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.social--icons {
+  display: flex;
+  gap: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .mobile-navbar-btn {
+    display: inline-block;
+    z-index: 999;
+    border: var(--black);
+  }
+  .mobile-nav-icon {
+    font-size: 4.2rem;
+    color: var(--black);
+  }
+
+  .navbar-link {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .link {
+    font-size: 4.2rem;
+  }
+  .active .mobile-nav-icon {
+    display: none;
+    font-size: 4.2rem;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    color: var(--black);
+    z-index: 9999;
+  }
+  .active .close-outline {
+    display: inline-block;
+  }
+  .active .navbar-link {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 999;
+  }
+}
