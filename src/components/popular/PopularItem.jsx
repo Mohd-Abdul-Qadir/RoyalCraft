@@ -10,9 +10,11 @@ const PopularItem = () => {
   };
   return (
     <div>
-      <h1 className="top-heading hero-heading">Popular Items</h1>
+      <h1 className="top-heading hero-heading" style={{ marginTop: "80px" }}>
+        Popular Items
+      </h1>
       <div className="main-container">
-        <div className="container">
+        <div className="container-top">
           <div className="item item-2">
             <img src="/images/item2.jpg" alt="item1" className="item-img" />
             <div className="item-button">

@@ -3,6 +3,7 @@ import Home from "../Home/Home";
 import TopCategories from "../TopCategories/TopCategories";
 import PopularItem from "../popular/PopularItem";
 import Welcome from "../welcome/Welcome";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <TopCategories />
       <Welcome />
       <PopularItem />
+      <Footer />
     </div>
   );
 };

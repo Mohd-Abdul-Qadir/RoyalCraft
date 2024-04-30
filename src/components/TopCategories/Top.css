@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;700;800;900&family=Work+Sans:wght@300;500;900&display=swap");
 
 .top-heading {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   display: flex;
   justify-content: center;
   font-family: "Quicksand", sans-serif;
@@ -11,7 +11,14 @@
   display: flex;
   justify-content: center;
 }
-.container {
+/* .container {
+  width: 1800px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  grid-gap: 30px;
+} */
+.container-top {
   width: 1800px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);

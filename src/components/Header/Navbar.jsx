@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="mobile-navbar-btn">
+        {/* <div className="mobile-navbar-btn">
           <CgMenu
             name="menu-outline"
             className="mobile-nav-icon"
@@ -74,7 +74,7 @@ const Navbar = () => {
             className="close-outline mobile-nav-icon"
             onClick={() => setOpenMenu(false)}
           />
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ const TopCategories = () => {
     <>
       <h1 className="top-heading hero-heading">Top Categories</h1>
       <div className="main-container">
-        <div className="container">
+        <div className="container-top">
           <div className="item item-1">
             <img src="/images/item5.jpg" alt="item1" className="item-img" />
             <button className="item-btn">Candle Stand</button>
