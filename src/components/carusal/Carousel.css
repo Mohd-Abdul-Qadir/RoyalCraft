@@ -16,3 +16,21 @@
   margin-bottom: 3.4rem;
   font-family: "Quicksand", sans-serif;
 }
+@media only screen and (max-width: 991px) {
+  .banner-img {
+    height: 500px;
+  }
+  .carousel-heading {
+    font-size: 3rem;
+  }
+  .carousel-para {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .caption {
+    bottom: -6rem;
+    right: 6rem;
+  }
+}

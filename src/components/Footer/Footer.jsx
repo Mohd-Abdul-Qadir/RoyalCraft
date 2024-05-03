@@ -143,8 +143,8 @@ export default function Footer() {
               <i className="fab fa-google"></i>
             </a>
             <a
-              // href="https://instagram.com/vip.cutlery?igshid=ZDdkNTZiNTM="
-              href="#"
+              href="https://www.instagram.com/royal__craft?igsh=MWJmcDBwbzJtYXJ1eQ=="
+              target="blank"
               className="me-4 text-reset"
             >
               <i className="fab fa-instagram"></i>
@@ -207,9 +207,9 @@ export default function Footer() {
                   Contact
                 </h6>
                 <p className="footer-para">
-                  <i className="fas fa-home me-3"></i> Delhi Rd, near bachcha
-                  jail, Hulshan ganj, naya gaon, Lakri Fazalpur, Moradabad,
-                  Uttar Pradesh 244001
+                  <i className="fas fa-home me-3"></i>
+                  Delhi Rd, near bachcha jail, Hulshan ganj, naya gaon, Lakri
+                  Fazalpur, Moradabad, Uttar Pradesh 244001
                 </p>
                 <p className="footer-para">
                   <i className="fas fa-envelope me-3"></i>

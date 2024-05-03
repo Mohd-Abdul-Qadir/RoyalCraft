@@ -1,0 +1,9 @@
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  margin-top: 2rem;
+  flex-basis: 24%;
+  cursor: pointer;
+}

@@ -15,14 +15,13 @@ function CarouselFadeExample() {
           style={{ opacity: "0.8" }}
           className="banner-img"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className="caption">
           <div
             className="section-hero-data"
             style={{
               position: "relative",
               top: "-10rem",
               justifyContent: "center",
-              width: "100%",
             }}
           >
             <ReactTyped
@@ -33,12 +32,8 @@ function CarouselFadeExample() {
               loop
             />
 
-            <h1 className="carousel-heading">
-              Decorate Your Dream Space
-              <br />
-              With Our Finest Collection
-            </h1>
-            <p className="carousel-para">
+            <h1 className="carousel-heading">Decorate Your Dream Space</h1>
+            <p className="carousel-para" style={{ width: "100%" }}>
               Explore our Curated Collections to discover the perfect pieces for
               you Unique Vision
             </p>
@@ -56,7 +51,7 @@ function CarouselFadeExample() {
           className="banner-img"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className="caption">
           <div
             className="section-hero-data"
             style={{
@@ -94,7 +89,7 @@ function CarouselFadeExample() {
           className="banner-img"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className="caption">
           <div
             className="section-hero-data"
             style={{
@@ -111,11 +106,7 @@ function CarouselFadeExample() {
               loop
             />
 
-            <h1 className="carousel-heading">
-              Decorate Your Dream Space
-              <br />
-              With Our Finest Collection
-            </h1>
+            <h1 className="carousel-heading">Decorate Your Dream Space</h1>
             <p className="carousel-para" style={{ width: "100%" }}>
               Explore our Curated Collections to discover the perfect pieces for
               you Unique Vision
