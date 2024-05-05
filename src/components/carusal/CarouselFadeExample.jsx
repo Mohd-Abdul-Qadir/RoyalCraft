@@ -3,9 +3,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "../common/Button/Button";
 import { ReactTyped } from "react-typed";
 import "./Carousel.css";
+import { useEffect } from "react";
 function CarouselFadeExample() {
+  const gotoBtn = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
+  const listenToScroll = () => {
+    let heightToVisible = 250;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToVisible) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
   return (
-    <Carousel fade style={{ top: "-100px" }}>
+    <Carousel fade>
       <Carousel.Item>
         {/* 1 first image */}
         <img
@@ -34,10 +55,9 @@ function CarouselFadeExample() {
 
             <h1 className="carousel-heading">Decorate Your Dream Space</h1>
             <p className="carousel-para" style={{ width: "100%" }}>
-              Explore our Curated Collections to discover the perfect pieces for
-              you Unique Vision
+              Explore our Curated Collections to
             </p>
-            <Button name={"Explore Collection"} />
+            <Button name={"Explore Collection"} onClick={gotoBtn} />
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -72,10 +92,9 @@ function CarouselFadeExample() {
 
             <h1 className="carousel-heading">Kitchenwares</h1>
             <p className="carousel-para" style={{ width: "100%" }}>
-              Explore our Curated Collections to discover the perfect pieces for
-              you Unique Vision
+              Explore our Curated Collections to
             </p>
-            <Button name={"Explore Collection"} />
+            <Button name={"Explore Collection"} onClick={gotoBtn} />
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -108,10 +127,9 @@ function CarouselFadeExample() {
 
             <h1 className="carousel-heading">Decorate Your Dream Space</h1>
             <p className="carousel-para" style={{ width: "100%" }}>
-              Explore our Curated Collections to discover the perfect pieces for
-              you Unique Vision
+              Explore our Curated Collections
             </p>
-            <Button name={"Explore Collection"} />
+            <Button name={"Explore Collection"} onClick={gotoBtn} />
           </div>
         </Carousel.Caption>
       </Carousel.Item>

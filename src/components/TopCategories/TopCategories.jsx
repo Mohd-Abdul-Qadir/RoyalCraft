@@ -16,7 +16,7 @@ const TopCategories = () => {
           </div>
           <div className="item item-3">
             <img src="/images/item3.jpg" alt="item1" className="item-img" />
-            <button className="item-btn-2">Wall Hanging Space</button>
+            <button className="item-btn-2">Hanging Space</button>
           </div>
           <div className="item item-4">
             <img src="/images/item4.jpg" alt="item1" className="item-img" />

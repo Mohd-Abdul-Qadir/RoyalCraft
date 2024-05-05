@@ -5,6 +5,7 @@ import Main from "./components/main/Main";
 import AboutUs from "./components/About/AboutUs";
 import ContactUs from "./components/Contact/ContactUs";
 import SingleProduct from "./components/singleproduct/SingleProduct";
+import GoToTop from "./components/GotoBtn/GoToTop";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -28,6 +29,7 @@ const Body = () => {
   return (
     <div>
       <RouterProvider router={appRouter} />
+      <GoToTop />,
     </div>
   );
 };

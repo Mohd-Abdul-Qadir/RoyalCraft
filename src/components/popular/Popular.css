@@ -58,3 +58,17 @@
 .heart-icon {
   color: red;
 }
+
+@media only screen and (max-width: 991px) {
+  .item-btn-pop-black {
+    font-size: 1.5rem;
+  }
+  .item-button {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .item-btn-pop {
+    font-size: 1.5rem;
+    padding: 0.8rem 5.2rem;
+  }
+}

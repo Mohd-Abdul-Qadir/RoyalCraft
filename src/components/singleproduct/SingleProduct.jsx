@@ -15,34 +15,36 @@ const SingleProduct = () => {
   return (
     <div>
       <Header />
-      <h1 className="top-heading hero-heading" style={{ marginTop: "80px" }}>
+
+      <h1 className="top-heading hero-heading" style={{ marginTop: "60px" }}>
         Product Details
       </h1>
       <div className="main-contact">
         <div className="container-about">
           <div className="main-input">
-            <div className="product-card" style={{ width: "400px" }}>
+            <div
+              className="product-card"
+              style={{ width: "300px", objectFit: "cover" }}
+            >
               {/* <img src="/images/item2.jpg" alt="item1" className="item-img" /> */}
 
-              <SideBySideMagnifier
-                //   className="input-position"
-                imageSrc="/images/item2.jpg"
-                largeImageSrc="/images/item2.jpg"
-                alwaysInPlace={false}
-                overlayOpacity={0.6}
-                switchSides={false}
-                zoomPosition="left"
-                //   inPlaceMinBreakpoint={641}
-                fillAvailableSpace={false}
-                fillAlignTop={false}
-                fillGapTop={0}
-                fillGapRight={10}
-                fillGapBottom={10}
-                fillGapLeft={50}
-                // zoomContainerDimensions={{ width: "800px", height: 800 }}
-                zoomContainerBorder="1px solid #ccc"
-                zoomContainerBoxShadow="0 4px 8px rgba(0,0,0,.5)"
-              />
+              <div>
+                <SideBySideMagnifier
+                  imageSrc="/images/item2.jpg"
+                  imageAlt="Second Slide"
+                  largeImageSrc="/images/item2.jpg"
+                  alwaysInPlace={false}
+                  fillAvailableSpace={true}
+                  switchSides={false}
+                  zoomPosition="left"
+                  inPlaceMinBreakpoint={641}
+                  fillAlignTop={true}
+                  fillGapRight={0}
+                  fillGapBottom={0}
+                  fillGapTop={0}
+                  fillGapLeft={0}
+                />
+              </div>
               <div className="small-img-row">
                 <div className="small-img-col">
                   <img
@@ -76,22 +78,48 @@ const SingleProduct = () => {
             </div>
           </div>
           <div>
-            <div className="main-icon">
-              <p className="contact-icon">Name</p>
-              <p className="contact-para">
-                Delhi Rd, near bachcha jail, Hulshan ganj, naya gaon,
-                <br /> Lakri Fazalpur, Moradabad, Uttar Pradesh 244001
-              </p>
+            <h2
+              style={{
+                fontSize: "4rem",
+                fontWeight: "bold",
+                marginTop: "30px",
+              }}
+            >
+              This is flower pot
+            </h2>
+            <table
+              width={"100%"}
+              cellPadding={5}
+              style={{ fontSize: "1.8rem", marginTop: "20px" }}
+            >
+              <tr>
+                <th>Name:</th>
+                <td>pot </td>
+              </tr>
+              <tr>
+                <th>Color:</th>
+                <td>red</td>
+              </tr>
+              <tr>
+                <th>Categories:</th>
+                <td>dilver</td>
+              </tr>
+              <tr>
+                <th>Description:</th>
+                <td>this is good product my company</td>
+              </tr>
+              <tr>
+                <th>Preferred Buyer From</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Location:</th>
+                <td>Worldwide</td>
+              </tr>
+            </table>
+            <div style={{ marginTop: "20px" }}>
+              <Button name={"Send Query"} />
             </div>
-            <div className="main-icon">
-              <p className="contact-icon">{/* <MdEmail /> */}</p>
-              <p className="contact-para">royalCraft@gmail.com</p>
-            </div>
-            <div className="main-icon">
-              <p className="contact-icon">{/* <FaPhone />    */}</p>
-              <p className="contact-para">+91 8755555175</p>
-            </div>
-            <Button name={"Submit"} />
           </div>
         </div>
       </div>
