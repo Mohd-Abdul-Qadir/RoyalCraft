@@ -13,18 +13,22 @@ const AboutUs = () => {
   return (
     <div>
       <Header />
-      <h1 className="top-heading hero-heading" style={{ marginTop: "80px" }}>
+      <h1 className="top-heading hero-heading" style={{ marginTop: "120px" }}>
         About Us
       </h1>
       <div className="main-container-about" bgColor="light">
         <div className="container-about">
           <div style={{ position: "relative" }}>
             <div className="box-img"></div>
-            <img src="/images/about-img.jpg" alt="about us image" width={500} />
             <div className="box-img-bottom"></div>
+            <img
+              src="/images/about-img.jpg"
+              alt="about us image"
+              className="about-image"
+            />
           </div>
           <div className="footer-para">
-            Incorporated in the year 2021, in Moradabad (Uttar Pradesh), Rising
+            Incorporated in the year 2018, in Moradabad (Uttar Pradesh), Rising
             International introduces itself as a top manufacturer, exporter, and
             supplier of a wide spectrum of kitchenware, tabletop products, and
             home décor items. Our product range covers server stands, cutlery
@@ -54,7 +58,7 @@ const AboutUs = () => {
             targeted time period. Our qualitative products, transparent
             dealings, timely delivery services, competitive pricing policy, and
             easy & convenient payment options enable us to fully satisfy our
-            customers across the world.{" "}
+            customers across the world.
           </div>
         </div>
       </div>

@@ -69,11 +69,26 @@
   right: 34.5rem;
   z-index: -2;
 }
+.about-image {
+  width: 500px;
+}
 .card-title {
   color: gray;
 }
 @media only screen and (max-width: 991px) {
   .container-about {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* .container-about {
+    grid-template-columns: 1fr;
+  } */
+  .glimpse {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .about-image {
+    width: 300px;
   }
 }

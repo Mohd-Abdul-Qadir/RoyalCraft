@@ -47,4 +47,7 @@
   .main-welcome > div > img {
     width: 300px;
   }
+  .welcome-heading {
+    font-size: 4rem;
+  }
 }

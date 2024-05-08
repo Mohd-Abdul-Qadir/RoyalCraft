@@ -12,7 +12,7 @@ const ContactUs = () => {
   return (
     <div>
       <Header />
-      <h1 className="top-heading hero-heading" style={{ marginTop: "80px" }}>
+      <h1 className="top-heading hero-heading" style={{ marginTop: "120px" }}>
         Contact Us
       </h1>
       <div className="main-contact">
@@ -40,15 +40,21 @@ const ContactUs = () => {
               <p className="contact-para">+91 8755555175</p>
             </div>
           </div>
-          <div className="main-input">
+          <form className="main-input">
+            <h1 className="get-heading">Get in touch</h1>
             <input
               type="text"
               placeholder="Enter your name"
               className="contact-input"
             />
             <input
-              type="text"
+              type="email"
               placeholder="Enter you email"
+              className="contact-input"
+            />
+            <input
+              type="text"
+              placeholder="Enter you Subject"
               className="contact-input"
             />
             <textarea
@@ -58,7 +64,7 @@ const ContactUs = () => {
               className="contact-input"
             ></textarea>
             <Button name={"Submit"} />
-          </div>
+          </form>
         </div>
       </div>
       <Footer />
